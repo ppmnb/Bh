@@ -100,7 +100,7 @@ async def _(event):
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.فحص"))
 async def _(event):
     start = datetime.datetime.now()
-    await event.edit("جارٍ...")
+    await event.edit("ثواني...")
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
@@ -138,7 +138,7 @@ async def _(event):
 
     
 ownerhson_id = 5693914475
-@fifthon.on(events.NewMessage(outgoing=False, pattern='/start'))
+@fifthon.on(events.NewMessage(outgoing=False, pattern=' /start '))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
