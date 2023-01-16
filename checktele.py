@@ -273,7 +273,7 @@ async def _(event):
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await fifthon.send_message(event.chat.id, " اجاك متاح !")
+                        await fifthon.send_message(event.chat.id, " تنح صدتلك يوزر")
             else:
                 pass
             trys += 1
@@ -281,14 +281,14 @@ async def _(event):
         isclaim.clear()
         isclaim.append("off")
         trys = ""
-        await event.client.send_message(event.chat_id, "! انتهى الصيد")
+        await event.client.send_message(event.chat_id, "!تم الانتهاء من الفحص")
         
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
     if ispay2[0] == "yes":
         trys = 0
         msg = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
-        if msg[0] == "تلقائي":  # تثبيت تلقائي عدد يوزر قناة
+        if msg[0] == "تلقائي":  # تثبيت تلقائي. عدد يوزر قناة
             isauto.clear()
             isauto.append("on")
             msg = ("".join(event.text.split(maxsplit=2)[2:])).split(" ", 2)
