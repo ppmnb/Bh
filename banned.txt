@@ -429,6 +429,7 @@ z63bot
 gw8bot
 v8nbot
 hu6bot
+r6fbot
 d24bot
 nz3bot
 ob6bot
