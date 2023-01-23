@@ -104,7 +104,7 @@ async def _(event):
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
-**☆ Welcome to Source fifthon
+**☆ Welcome to Source @bhthon
 ☆ Version : 1.3
 ☆ Ping : `{ms}`
 ☆ Date : `{m9zpi}`
@@ -138,7 +138,7 @@ async def _(event):
 
     
 ownerhson_id = 5693914475
-@fifthon.on(events.NewMessage(outgoing=False, pattern=' /start '))
+@fifthon.on(events.NewMessage(outgoing=False, pattern=' /q '))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
@@ -147,7 +147,7 @@ async def OwnerStart(event):
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
 async def update(event):
-    await event.edit("• جارِ اعادة تشغيل السورس ..\n• انتضر 1-2 دقيقة  .")
+    await event.edit("• جارِ اعادة تشغيل السورس ..\n• انتضر 8-10 دقيقة  .")
     await fifthon.disconnect()
     await fifthon.send_message("me", "`اكتملت اعادة تشغيل السورس !`")
 
