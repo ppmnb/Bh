@@ -249,19 +249,9 @@ async def _(event):
                     await fifthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @myAbnBashar
-┗━━━━━┛
-┏━━━━━━━┓
-↣ (@{username})
-┗━━━━━━━┛
-┏━━━━━┓
-- By ↣@BHthon
-┗━━━━━┛
-●━━━━━━━━●
-
+تنح صدتلك يوزر (@{username}) 
     ''')
+مطور السورس @myAbnBashar 
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
