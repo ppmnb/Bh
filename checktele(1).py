@@ -55,8 +55,9 @@ def gen_user(choice):
             f = [c[0], "_", d[0], "_", s[0]]
             username = ''.join(f)
         else:
-            pass
-    if choice == "2":
+            يمر
+            
+    إذا كان  الاختيار  ==  "2" :
         c = random.choices(a)
         d = random.choices(a)
         s = random.choices(e)
@@ -248,19 +249,9 @@ async def _(event):
                 try:
                     await fifthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @iziii 
-┗━━━━━┛
-┏━━━━━━━┓
-↣ (@{username})
-┗━━━━━━━┛
-┏━━━━━┓
-- By ↣@ZBaak 
-┗━━━━━┛
-●━━━━━━━━●
-
+                    await event.client.send_message(event.chat_id, f
+                                                    تم الانتهاء من الفحص (@{username})
+قناه السورس: @BHthon
     ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -273,7 +264,7 @@ async def _(event):
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await fifthon.send_message(event.chat.id, " اجاك متاح !")
+                        await fifthon.send_message(event.chat.id, " خاصيه او مزاد!")
             else:
                 pass
             trys += 1
@@ -317,17 +308,9 @@ async def _(event):
                         await fifthon(functions.channels.UpdateUsernameRequest(
                             channel=ch, username=username))
                         await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @iziii 
-┗━━━━━┛
-┏━━━━━━━┓
-↣ (@{username})
-┗━━━━━━━┛
-┏━━━━━┓
-- By ↣@ZBaak 
-┗━━━━━┛
-●━━━━━━━━●
+تم الانتهاء من التثبيت (@{username})
+                                              قناه السورس: @BHthon      
+                                                
 
     ''')
                         break
@@ -358,19 +341,12 @@ async def _(event):
             try:
                 await fifthon(functions.channels.UpdateUsernameRequest(
                     channel=ch, username=username))
-                await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @iziii 
-┗━━━━━┛
-┏━━━━━━━┓
-↣ (@{username})
-┗━━━━━━━┛
-┏━━━━━┓
-- By ↣@ZBaak 
-┗━━━━━┛
-●━━━━━━━━●
+                await event.client.send_message(event.chat_id. f'''
+تم الانتهاء من التثبيت (@{username})
 
+                                              قناه السورس: @BHthon      
+
+ 
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
                 await event.client.send_message(event.chat_id, f"مبند `{username}` ❌❌")
