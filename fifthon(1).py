@@ -33,7 +33,7 @@ sec = time.time()
 LOGS = logging.getLogger(__name__)
 
 DEVS = [
-    5307018300,
+    5693914475,
 ]
 DEL_TIME_OUT = 10
 normzltext = "1234567890"
@@ -50,7 +50,7 @@ async def join_channel():
         pass
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"هممم"))
+@BHthon.on(events.NewMessage(outgoing=True, pattern=r"هممم"))
 async def _(event):
     if not event.is_reply:
         return await event.edit(
@@ -105,11 +105,12 @@ async def _(event):
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
 **☆ Welcome to Source fifthon
-☆ Version : 1.3
-☆ Ping : `{ms}`
-☆ Date : `{m9zpi}`
+♡ Version : 1.3
+♡ Ping : `{ms}`
+♡ Date : `{m9zpi}`
 ☆ ID : `{event.sender_id}`
-☆ Source fifthon : @zbaak**
+☆ Source fifthon : @BHthon
+☆ developer @myAbnBashar**
 ''')
 
 
@@ -137,17 +138,17 @@ async def _(event):
     await event.edit(sec4)
 
     
-ownerhson_id = 1041483862
-@fifthon.on(events.NewMessage(outgoing=False, pattern='/start'))
+ownerhson_id = 5693914475
+@BHthon.on(events.NewMessage(outgoing=False, pattern='/start'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply('اهلا مطوري حلم @iziii')
+        order = await event.reply('اه @bbqqqb)
 
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
 async def update(event):
-    await event.edit("• جارِ اعادة تشغيل السورس ..\n• انتضر 1-2 دقيقة  .")
+    await event.edit("• جارِ اعادة تشغيل السورس ..\n• انتضر 8-10 دقيقة  .")
     await fifthon.disconnect()
     await fifthon.send_message("me", "`اكتملت اعادة تشغيل السورس !`")
 
