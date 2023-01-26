@@ -192,25 +192,25 @@ def gen_user(choice):
             pass
     return username
 
-@Bhthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
 async def _(event):
     if ispay2[0] == "yes":
         await event.edit(tele_checker)
         
-@Bhthon.on(events.NewMessage(outgoing=True, pattern=r"\.اليوزرات المبندة"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اليوزرات المبندة"))
 async def _(event):
     if ispay2[0] == "yes":
         await fifthon.send_file(event.chat_id, 'banned.txt')
 
 
-@Bhthon.on(events.NewMessage(outgoing=True, pattern=r"\.الانواع"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.الانواع"))
 async def _(event):
     if ispay2[0] == "yes":
         await event.edit(tele_checker2)
 # صيد عدد نوع قناة
 
 
-@BHthon.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
+@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
 async def _(event):
     if ispay2[0] == "yes":
         isclaim.clear()
@@ -221,7 +221,7 @@ async def _(event):
         trys = 0
         await event.edit(f"حسناً سأفحص نوع `{choice}` من اليوزرات على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
 
-        @BHthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة الصيد"))
+        @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة الصيد"))
         async def _(event):
             if ispay2[0] == "yes":
                 if "on" in isclaim:
