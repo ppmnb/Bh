@@ -106,7 +106,7 @@ async def _(event):
     await event.edit(f'''
 **☆ Welcome to Source BHthon 
 ☆ Version : 1.3
-☆ Source fifthon : @BHthon
+☆ Source bhthon : @BHthon
 ♡ Developer or programmer @myAbnBashar**
 ''')
 
@@ -145,7 +145,7 @@ async def OwnerStart(event):
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
 async def update(event):
-    await event.edit("• جارِ اعادة تشغيل السورس ..\n• انتضر 1-2 دقيقة  .")
+    await event.edit(".  جارِ اعادة تشغيل السورس..تم الانتهاء من اعاده التشغيل ارسل .فحص..\n•  .")
     await fifthon.disconnect()
     await fifthon.send_message("me", "`اكتملت اعادة تشغيل السورس !`")
 
