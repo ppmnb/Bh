@@ -264,7 +264,7 @@ async def _(event):
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await fifthon.send_message(event.chat.id, " اجاك متاح !")
+                        await fifthon.send_message(event.chat.id, " خاصيه او مزاد !")
             else:
                 pass
             trys += 1
