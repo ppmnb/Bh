@@ -13,9 +13,9 @@ from help import *
 from config import *
 from threading import Thread
 
-a = 'qwertyuiopassdfghjklzxcvbnm'
+a = 'mnertyuiopassdfghjklzxcvbqw'
 b = '1234567890'
-e = 'qwertyuiopassdfghjklzxcvbnm1234567890'
+e = 'mnertyuiopassdfghjklzxcvbwq1234567890'
 
 banned = []
 isclaim = ["off"]
@@ -31,7 +31,7 @@ def check_user(username):
     url = "https://t.me/"+str(username)
     headers = {
         "User-Agent": generate_user_agent(),
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.9",
         "Accept-Encoding": "gzip, deflate, br",
         "Accept-Language": "ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7"}
 
@@ -192,25 +192,25 @@ def gen_user(choice):
             pass
     return username
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
+@Bhthon.on(events.NewMessage(outgoing=True, pattern=r"\.تشيكر"))
 async def _(event):
     if ispay2[0] == "yes":
         await event.edit(tele_checker)
         
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اليوزرات المبندة"))
+@Bhthon.on(events.NewMessage(outgoing=True, pattern=r"\.اليوزرات المبندة"))
 async def _(event):
     if ispay2[0] == "yes":
         await fifthon.send_file(event.chat_id, 'banned.txt')
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.الانواع"))
+@Bhthon.on(events.NewMessage(outgoing=True, pattern=r"\.الانواع"))
 async def _(event):
     if ispay2[0] == "yes":
         await event.edit(tele_checker2)
 # صيد عدد نوع قناة
 
 
-@fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
+@BHthon.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
 async def _(event):
     if ispay2[0] == "yes":
         isclaim.clear()
@@ -221,7 +221,7 @@ async def _(event):
         trys = 0
         await event.edit(f"حسناً سأفحص نوع `{choice}` من اليوزرات على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
 
-        @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة الصيد"))
+        @BHthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة الصيد"))
         async def _(event):
             if ispay2[0] == "yes":
                 if "on" in isclaim:
