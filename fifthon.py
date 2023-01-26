@@ -33,7 +33,7 @@ sec = time.time()
 LOGS = logging.getLogger(__name__)
 
 DEVS = [
-    5307018300,
+    5693914475,
 ]
 DEL_TIME_OUT = 10
 normzltext = "1234567890"
@@ -145,9 +145,9 @@ async def OwnerStart(event):
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
 async def update(event):
-    await event.edit(".  جارِ اعادة تشغيل السورس..تم الانتهاء من اعاده التشغيل ارسل .فحص..\n•  .")
+    await event.edit(".  جارِ اعادة تشغيل السورس.انتضر 4-2 دقيقه..\n•  .")
     await fifthon.disconnect()
-    await fifthon.send_message("me", "`اكتملت اعادة تشغيل السورس !`")
+    await fifthon.send_message("me", "` تم اعادة تشغيل السورس بنجاج !`")
 
 
 print("- fifthon Userbot Running ..")
