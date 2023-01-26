@@ -249,18 +249,9 @@ async def _(event):
                     await fifthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @iziii 
-┗━━━━━┛
-┏━━━━━━━┓
-↣ (@{username})
-┗━━━━━━━┛
-┏━━━━━┓
-- By ↣@ZBaak 
-┗━━━━━┛
-●━━━━━━━━●
 
+✪ (@{username}) تم الصيد
+✪ By @BHthon- @bbqqqb 
     ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -317,17 +308,9 @@ async def _(event):
                         await fifthon(functions.channels.UpdateUsernameRequest(
                             channel=ch, username=username))
                         await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @iziii 
-┗━━━━━┛
-┏━━━━━━━┓
-↣ (@{username})
-┗━━━━━━━┛
-┏━━━━━┓
-- By ↣@ZBaak 
-┗━━━━━┛
-●━━━━━━━━●
+                        
+✪ (@{username}) تم الصيد
+✪ By @BHthon- @bbqqqb 
 
     ''')
                         break
@@ -359,17 +342,8 @@ async def _(event):
                 await fifthon(functions.channels.UpdateUsernameRequest(
                     channel=ch, username=username))
                 await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @iziii 
-┗━━━━━┛
-┏━━━━━━━┓
-↣ (@{username})
-┗━━━━━━━┛
-┏━━━━━┓
-- By ↣@ZBaak 
-┗━━━━━┛
-●━━━━━━━━●
+✪ (@{username}) تم الصيد
+✪ By @BHthon- @bbqqqb 
 
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
