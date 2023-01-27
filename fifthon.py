@@ -106,7 +106,7 @@ async def _(event):
     await event.edit(f'''
 **☆ Welcome to Source BHthon 
 ☆ Version : 1.3
-☆ Source bhthon : @BHthon
+☆ Source bhthon : @BHthon - @hhhh_xxx
 ♡ Developer or programmer @myAbnBashar**
 ''')
 
