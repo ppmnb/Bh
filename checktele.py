@@ -251,7 +251,7 @@ async def _(event):
                     await event.client.send_message(event.chat_id, f'''
 
 ✪ (@{username}) تم الصيد
-✪ By @BHthon- @bbqqqb 
+✪ By @BHthon - @bbqqqb - @hhhh_xxx
     ''')
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
@@ -310,7 +310,7 @@ async def _(event):
                         await event.client.send_message(event.chat_id, f'''
                         
 ✪ (@{username}) تم الصيد
-✪ By @BHthon- @bbqqqb 
+✪ By @BHthon- @bbqqqb - hhhh_xxx
 
     ''')
                         break
