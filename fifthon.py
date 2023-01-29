@@ -104,7 +104,7 @@ async def _(event):
     end = datetime.datetime.now()
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
-**☆ hi Checker Telegram bhthon
+** ☆ hi Checker Telegram bhthon
 ☆ Source BHthon : @bhthon
 ♡ programmer  :  @bbqqqb
 ♡ Works - yes Works .!**
