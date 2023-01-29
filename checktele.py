@@ -264,7 +264,7 @@ async def _(event):
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await fifthon.send_message(event.chat.id, " خاصية او مزاد !")
+                        await fifthon.send_message(event.chat.id, " خاصية او مزاد ")
             else:
                 pass
             trys += 1
@@ -342,7 +342,6 @@ async def _(event):
                     channel=ch, username=username))
                 await event.client.send_message(event.chat_id, f'''
 ✪ (@{username}) تم الصيد
-
 ✪ By @BHthon - @bbqqqb - @hhhh_xxx
 
     ''')
