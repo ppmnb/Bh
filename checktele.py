@@ -249,17 +249,8 @@ async def _(event):
                     await fifthon(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
                     await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @iziii 
-┗━━━━━┛
-┏━━━━━━━┓
-↣ (@{username})
-┗━━━━━━━┛
-┏━━━━━┓
-- By ↣@ZBaak 
-┗━━━━━┛
-●━━━━━━━━●
+✪ (@{username}) تم الصيد
+✪ By @BHthon - @bbqqqb 
 
     ''')
                     break
@@ -273,7 +264,7 @@ async def _(event):
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await fifthon.send_message(event.chat.id, " اجاك متاح !")
+                        await fifthon.send_message(event.chat.id, " خاصية او مزاد !")
             else:
                 pass
             trys += 1
@@ -317,17 +308,8 @@ async def _(event):
                         await fifthon(functions.channels.UpdateUsernameRequest(
                             channel=ch, username=username))
                         await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @iziii 
-┗━━━━━┛
-┏━━━━━━━┓
-↣ (@{username})
-┗━━━━━━━┛
-┏━━━━━┓
-- By ↣@ZBaak 
-┗━━━━━┛
-●━━━━━━━━●
+✪ (@{username}) تم الصيد
+✪ By @BHthon - @bbqqqb - @hhhh_xxx
 
     ''')
                         break
@@ -359,17 +341,9 @@ async def _(event):
                 await fifthon(functions.channels.UpdateUsernameRequest(
                     channel=ch, username=username))
                 await event.client.send_message(event.chat_id, f'''
-●━━━━━━━━●
-┏━━━━━┓
-- By ↣ @iziii 
-┗━━━━━┛
-┏━━━━━━━┓
-↣ (@{username})
-┗━━━━━━━┛
-┏━━━━━┓
-- By ↣@ZBaak 
-┗━━━━━┛
-●━━━━━━━━●
+✪ (@{username}) تم الصيد
+
+✪ By @BHthon - @bbqqqb - @hhhh_xxx
 
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
